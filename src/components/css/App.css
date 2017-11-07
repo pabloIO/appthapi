@@ -1,0 +1,135 @@
+body{
+  background-color: rgba(249, 249, 210, 1);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.main{
+  min-height: 532px;
+}
+
+.back-red{
+  position: absolute;
+  right: 425px;
+  top: 90px;
+  background-color: rgba(241, 89, 48, 0.85);
+  height: 400px;
+  width: 800px;
+  border-radius: 50%;
+}
+
+.back-yellow{
+  background-color: yellow;
+}
+
+.back-orange{
+  background-color: rgb(255, 92, 0);
+}
+
+.plato{
+  position: relative;
+  opacity:0;
+  animation: desplazamiento infinite 5s;
+}
+
+.lechuga{
+  position: relative;
+  left: 220px;
+  top: -210px;
+  opacity:0;
+  animation: desp_lech infinite 5s;
+}
+
+.filete{
+  position: relative;
+  left: 100px;
+  bottom: 160px;
+  opacity:0;
+  animation: filete infinite 5s;
+}
+
+.papas{
+  position: relative;
+  left: -130px;
+  bottom: 150px;
+  opacity:0;
+  animation: papas infinite 5s;
+}
+
+.tomate{
+  position: relative;
+  left: -150px;
+  bottom: 150px;
+  opacity:0;
+  animation: tomate infinite 5s;
+}
+
+.contenedor{
+  position: relative;
+  top:150px;
+  /*bottom: 100px;*/
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes desplazamiento {
+  0%{left: -500px;opacity: 0;}
+  20%{left: 0px;opacity: 1}
+  100%{opacity:1;}
+  /*100%{left: -500px;}*/
+}
+
+@keyframes desp_lech {
+  0%{left:500px;}
+  20%{left: 500px;opacity:0;}
+  40%{left: 220px;opacity:1;}
+  100%{opacity:1;}
+  /*100%{left: -500px;}*/
+}
+
+@keyframes filete {
+  0%{left: 500px;}
+  40%{left: 500px;opacity:0;}
+  60%{left: 100px;opacity:1;}
+  100%{opacity:1;}
+}
+
+@keyframes papas {
+  0%{left: -500px;}
+  60%{left: -500px;opacity:0;}
+  80%{left: -130px;opacity:1;}
+  100%{opacity:1;}
+}
+
+@keyframes tomate {
+  0%{left: -500px;}
+  80%{left: -500px;opacity:0;}
+  100%{left: -150px;opacity:1;}
+  100%{opacity:1;}
+}
